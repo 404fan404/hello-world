@@ -10,7 +10,7 @@ args = parser.parse_args()
 myfile = args.file
 char_size = args.size
 
-a = 'qwertyuiopasdfghjkl;zxcvbnm,./\'[]\\1234567890-=`~!@#$%^&*()_+{}|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM'
+a = 'qwertyuiopasdfghjkl;zxcvbnm,./\'[]\\1234567890-=`~!@#$%^&*()_+{}|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM\n'
 if myfile:
     temp = myfile
 else:
