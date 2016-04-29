@@ -10,7 +10,9 @@ args = parser.parse_args()
 myfile = args.file
 char_size = args.size
 
-a = 'qwertyuiopasdfghjkl;zxcvbnm,./\'[]\\1234567890-=`~!@#$%^&*()_+{}|:"<>?QWERTYUIOPASDFGHJKLZXCVBNM\n'
+a = [chr(i) for i in range(255)]
+a = ''.join(a)
+
 if myfile:
     temp = myfile
 else:
@@ -19,7 +21,7 @@ else:
         temp.append(a[randint(0,len(a)-1)])
     temp = ''.join(temp) + '.txt'
 files = open(temp,'w')
-if char_size == -1:
+if char_size <= 0:
     num = randint(1,2**16)
 else:
     num = char_size
