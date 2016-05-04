@@ -12,8 +12,10 @@ args = parser.parse_args()
 myfile = args.file
 char_size = args.size
 
-a = [chr(i) for i in range(32,255) if i != 127]
-a = ''.join(a)
+a = [chr(i) for i in range(32,127)]
+tmp1 = [chr(i) for i in range(161,255) if i != 173]
+
+a = ''.join(a) + '\n\t '+ ''.join(tmp1)
 
 if myfile:
     temp = myfile
