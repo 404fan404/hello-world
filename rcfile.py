@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 import argparse
 from random import choice,randint
-
+'''
+产生一个随机文件
+'''
 parser = argparse.ArgumentParser()
 
-parser.add_argument('file')
+parser.add_argument('file',default='tmp.txt')
 parser.add_argument('-s','--size',type=int,default=-1)
 args = parser.parse_args()
 myfile = args.file
 char_size = args.size
 
-a = [chr(i) for i in range(255)]
+a = [chr(i) for i in range(32,255) if i != 127]
 a = ''.join(a)
 
 if myfile:
