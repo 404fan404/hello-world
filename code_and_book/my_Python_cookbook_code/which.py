@@ -12,6 +12,7 @@ for i in path_list:
     except:
         continue
     else:
+        str.close()
         print(i + '/' + files)
         num += 1
         break
