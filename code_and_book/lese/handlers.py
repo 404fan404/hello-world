@@ -20,7 +20,7 @@ class Handler:
 class HTMLRenderer(Handler):
     def start_document(self):
         print('<html><head><title>shiyanlou</title></head><body>')
-    def end_socument(self):
+    def end_document(self):
         print('</body></html>')
     def start_paragraph(self):
         print('<p style="color:#444;">')

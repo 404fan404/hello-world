@@ -38,8 +38,8 @@ class BasicTextParser(Parser):
         self.addRule(HeadingRule())
         self.addRule(ParagraphRule())
         self.addFilter(r'\*(.+?)\*','emphasis')
-        self.addFilter(r'(http[s]?://[\.a-zA-Z/]+)','url')
-        self.addFilter(r'([\.a-zA-z]+@[\.a-zA-Z]+[a-zA-Z]+)','mail')
+        self.addFilter(r'(http[s]?://[\.a-zA-Z0-9/\?%\+=&]+)','url')
+        self.addFilter(r'([\.a-zA-Z0-9\_]+@[\.a-zA-Z]+[a-zA-Z]+)','mail')
 
 if __name__ == '__main__':
     handler = HTMLRenderer()
