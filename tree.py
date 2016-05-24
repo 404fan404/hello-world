@@ -58,7 +58,7 @@ if __name__ == '__main__':
         dirtest(-1,'.')
     else:
         if '--help' in sys.argv:
-            print('python3 tree.py <dir list>')
+            print('python3 tree.py <directory list>')
         elif '--version' in sys.argv:
             print('tree.py-deta 0.0.1')
         else:
