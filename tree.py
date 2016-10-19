@@ -60,7 +60,7 @@ if __name__ == '__main__':
         if '--help' in sys.argv:
             print('python3 tree.py <directory list>')
         elif '--version' in sys.argv:
-            print('tree.py-deta 0.0.1')
+            print('tree-deta 0.0.1')
         else:
             for i in sys.argv[1:]:
                 if i[0] == '~':
