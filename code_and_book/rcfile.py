@@ -2,7 +2,7 @@
 import argparse
 from random import choice,randint
 '''
-产生一个随机文件
+产生一个含有随机字符串的文件
 '''
 parser = argparse.ArgumentParser()
 
