@@ -1,5 +1,5 @@
 # hello-world
 
-1. #!/usr/bin/env python
-2. #-*- coding:utf-8 -*-
-3. print("hello world")
+* #!/usr/bin/env python
+* #-*- coding:utf-8 -*-
+* print("hello world")
